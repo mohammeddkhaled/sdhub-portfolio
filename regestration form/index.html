@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>registration form</title>
+    <script src="form.js" defer></script>
+    <link href="../src\output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div
+      class="w-screen h-screen bg-amber-400 flex justify-center items-center"
+    >
+      <form id="main" class="w-80 p-5 bg-blue-400">
+        <!-- name input -->
+        <p>Full name<span class="text-red-700">*</span></p>
+        <div class="border-2 mb-10">
+          <input
+            class="w-full pl-5"
+            type="text"
+            placeholder="enter name"
+            required
+          />
+        </div>
+        <!-- pass input -->
+        <p>password<span class="text-red-700">*</span></p>
+        <div class="border-2 mb-10">
+          <input
+            id="input1"
+            class="w-full pl-5"
+            type="password"
+            placeholder="enter password"
+            required
+          />
+        </div>
+        <!-- con input -->
+        <p>conform password<span class="text-red-700">*</span></p>
+        <div class="border-2 mb-10">
+          <input
+            id="input2"
+            class="w-full pl-5"
+            type="password"
+            placeholder="conform password"
+            required
+          />
+        </div>
+        <!-- ver pass input -->
+        <p id="verify-password"></p>
+
+        <!-- captcha -->
+        <div id="captcha-container">
+          <span id="captcha-display"></span>
+          <button id="refresh">Refresh</button>
+        </div>
+        <!-- captcha input -->
+        <input type="text" id="user-input" placeholder="Enter CAPTCHA" />
+        <button id="verify">Verify</button>
+        <!-- captcha status -->
+        <p id="status-message"></p>
+
+        <!-- submit button -->
+        <button id="submit">submit</button>
+      </form>
+    </div>
+  </body>
+</html>
