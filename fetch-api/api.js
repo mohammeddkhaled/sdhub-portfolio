@@ -15,17 +15,20 @@ async function fetchApi() {
         let p = document.createElement('p')
         let p2 = document.createElement('p')
         let b = document.createElement('b')
+        let img = document.createElement('img')
       
 
         h1.textContent=element.title
         p.textContent=element.description
         p2.textContent=element.category
         b.textContent=element.price
+        img.setAttribute('src',element.images[0])
 
         div.appendChild(h1)
         div.appendChild(p)
         div.appendChild(p2)
         div.appendChild(b)
+        div.appendChild(img)
 
         document.querySelector('#parent').appendChild(div)
     }
